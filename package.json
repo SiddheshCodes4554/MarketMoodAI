@@ -1,0 +1,43 @@
+{
+  "name": "marketmoodaiapp",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node ./node_modules/expo/bin/cli start",
+    "start:clear": "node ./node_modules/expo/bin/cli start --clear",
+    "android": "node ./node_modules/expo/bin/cli start --android",
+    "ios": "node ./node_modules/expo/bin/cli start --ios",
+    "web": "node ./node_modules/expo/bin/cli start --web",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@expo-google-fonts/poppins": "^0.4.1",
+    "@expo/vector-icons": "^15.1.1",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-navigation/bottom-tabs": "^7.15.7",
+    "@react-navigation/native": "^7.2.0",
+    "@react-navigation/native-stack": "^7.14.7",
+    "@supabase/supabase-js": "^2.100.0",
+    "babel-preset-expo": "~55.0.8",
+    "expo": "~55.0.8",
+    "expo-font": "^55.0.4",
+    "expo-haptics": "~55.0.9",
+    "expo-status-bar": "~55.0.4",
+    "react": "19.2.0",
+    "react-native": "0.83.2",
+    "react-native-chart-kit": "^6.12.0",
+    "react-native-reanimated": "4.2.1",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.23.0",
+    "react-native-svg": "^15.15.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.29.1",
+    "@typescript-eslint/parser": "^8.29.1",
+    "@types/react": "~19.2.2",
+    "eslint": "^9.22.0",
+    "typescript": "~5.9.2"
+  },
+  "private": true
+}

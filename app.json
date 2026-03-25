@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "MarketMood AI",
+    "slug": "marketmood-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A2540"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A2540",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.siddhu45545646.marketmoodai"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
