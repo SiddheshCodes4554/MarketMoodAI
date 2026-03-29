@@ -1,102 +1,318 @@
-# MarketMood AI
+# 🚀 MarketMood AI
 
-MarketMood AI is a React Native (Expo) app for market intelligence that combines live market feeds, sentiment analytics, and AI explainability.
+### GenAI Stock & Economy Sentiment Engine
 
-## Project Overview
+**From Market Noise → Actionable Intelligence**
 
-The app is designed for hackathon demos and production-readiness, with a robust dual-mode architecture:
-- Live mode for real API-backed insights
-- Demo mode for stable preloaded outputs
+---
 
-## Features
+## 🧠 Overview
 
-- Dashboard sentiment intelligence
-- Stock Explorer and Stock Detail analysis
-- Opportunity Radar signal engine
-- Market Story mode
-- AI Market Chat
-- Confidence and explainability factors
-- Multi-source fallback for quotes and news
-- Cache-backed resilience with safe UI fallbacks
+MarketMood AI is a **GenAI-powered mobile application** that helps retail investors make smarter financial decisions by transforming fragmented market data into **clear, explainable, and actionable insights**.
 
-## Tech Stack
+Unlike traditional platforms that only provide charts and numbers, MarketMood AI focuses on **Decision Intelligence** — answering:
 
-- Expo + React Native + TypeScript
-- React Navigation
-- Supabase Auth/Profile
-- AsyncStorage
-- Groq API
-- Finnhub, Yahoo, Stooq
-- GNews + RSS fallbacks
+* What is happening?
+* Why does it matter?
+* What should I do next?
 
-## Setup Instructions
+---
 
-1. Install dependencies:
+## 🎯 Problem Statement
+
+India has over **14+ crore retail investors**, yet most face:
+
+* 📉 Information overload (news, social media, data)
+* ⚠️ Lack of real-time interpretation
+* 😨 Emotion-driven decisions
+* 💸 Missed opportunities
+
+> The market has data — but lacks **clarity and decision support**.
+
+---
+
+## 💡 Solution
+
+MarketMood AI combines:
+
+* Real-time market data
+* News sentiment analysis
+* GenAI-powered reasoning
+
+To deliver:
+
+✅ Actionable insights
+✅ AI-generated explanations
+✅ Suggested actions (non-advisory)
+✅ Confidence scoring & explainability
+
+---
+
+## 🧩 Key Features
+
+### 📊 Dashboard Intelligence
+
+* Market Sentiment Index (Bullish ↔ Bearish)
+* Fear & Greed Score
+* Sector Heatmap
+* Risk Alerts (panic / hype detection)
+* AI Market Summary + Suggested Action
+
+---
+
+### 🔍 Stock Explorer
+
+* Real-time stock search (debounced)
+* Popular stocks list (zero API load)
+* Lazy loading (on-demand fetch)
+* Global + Indian stock support
+
+---
+
+### 📈 Stock Detail Intelligence
+
+* Live price + trend data
+* News + sentiment analysis
+* AI-generated outlook
+* Suggested action + confidence score
+* Explainability (“Why?” reasoning)
+
+---
+
+### 🚀 Opportunity Radar ⭐
+
+* Detects bullish / bearish signals
+* Highlights potential opportunities
+* “Why this matters” reasoning
+* Suggested action + signal strength
+
+> 🔥 Core differentiator — moves from analysis → opportunity detection
+
+---
+
+### 📰 Market Story Mode
+
+* AI-generated daily market narrative:
+
+  * What happened
+  * Why it happened
+  * What to watch next
+
+---
+
+### 💬 AI Market Chat
+
+* Ask: “Why is the market down?”
+* Get structured, explainable responses
+
+---
+
+### 🚨 Risk Alert System
+
+* Detects panic signals
+* Flags hype-driven stocks
+* Identifies volatility spikes
+
+---
+
+### 🔍 Explainability Layer
+
+* “Why?” button on every insight
+* Confidence scores + reasoning
+
+---
+
+## 🤖 GenAI Innovation
+
+MarketMood AI uses AI beyond summarization:
+
+* 🧠 Narrative Generation → Human-readable insights
+* 🎯 Decision Engine → Context-aware suggestions
+* 📊 Opportunity Detection → Multi-signal analysis
+* 🔍 Explainability → Transparent reasoning
+
+> We generate **financial intelligence**, not just content.
+
+---
+
+## 🏗️ System Architecture
+
+```
+Data APIs → Processing → AI Layer → Decision Engine → Mobile UI
+```
+
+### Layers:
+
+* **Data Layer:** Finnhub, Yahoo Finance, Stooq, GNews, RSS
+* **Processing Layer:** Sentiment + normalization
+* **AI Layer:** Groq (LLaMA models)
+* **Decision Layer:** Actions + confidence scoring
+* **UI Layer:** React Native mobile app
+
+---
+
+## ⚙️ Tech Stack
+
+### 📱 Frontend
+
+* React Native (Expo)
+* TypeScript
+* React Navigation
+
+### 🤖 AI
+
+* Groq API (LLaMA models)
+
+### 📊 Data Sources
+
+* Finnhub (primary)
+* Yahoo Finance + Stooq (fallback)
+* GNews + RSS feeds
+
+### 🗄️ Backend
+
+* Supabase (Auth + DB)
+
+### 💾 Storage
+
+* AsyncStorage (caching)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
-2. Configure environment variables:
+---
+
+### 2. Setup Environment Variables
+
+Create `.env` from `.env.example`:
 
 ```bash
 copy .env.example .env
 ```
 
-3. Run app:
+Add:
+
+* EXPO_PUBLIC_SUPABASE_URL
+* EXPO_PUBLIC_SUPABASE_ANON_KEY
+* EXPO_PUBLIC_GROQ_API_KEY
+* EXPO_PUBLIC_FINNHUB_API_KEY
+* EXPO_PUBLIC_GNEWS_API_KEY
+
+---
+
+## 🗄️ Supabase Setup (Required)
+
+### 1. Create Supabase Project
+
+* https://supabase.com
+* Copy URL + Anon Key
+
+---
+
+### 2. Run SQL Schema
+
+Navigate to:
+
+```
+/supabase/schema.sql
+```
+
+Then:
+
+* Open Supabase → SQL Editor
+* Paste schema
+* Run query
+
+---
+
+### 3. Enable Authentication
+
+* Go to Authentication → Settings
+* Enable Email provider
+
+---
+
+### 🧪 Demo Mode (No Setup Required)
+
+You can skip backend setup:
+
+* Launch app
+* Select **Demo Mode**
+* Explore preloaded outputs
+
+---
+
+## ▶️ Run App
 
 ```bash
 npm start
 ```
 
-## Environment Variables
+---
 
-Use the following keys in .env:
-- EXPO_PUBLIC_SUPABASE_URL
-- EXPO_PUBLIC_SUPABASE_ANON_KEY
-- EXPO_PUBLIC_GROQ_API_KEY
-- EXPO_PUBLIC_FINNHUB_API_KEY
-- EXPO_PUBLIC_GNEWS_API_KEY
+## 📁 Project Structure
 
-## Demo Instructions
-
-1. Launch app and select Demo mode in onboarding.
-2. Use the Demo Mode toggle for stable best-case outputs.
-3. Switch to Live mode to use real APIs.
-
-## Architecture Overview
-
-The app follows a layered architecture:
-- Screens call standardized service facades (newsService, stockService, aiService)
-- Context controls app session and app mode
-- Utilities provide cache and error handling
-- Constants provide central config and theme
-
-Detailed architecture document: ARCHITECTURE.md
-
-## Repository Structure
-
-- src/components
-- src/screens
-- src/navigation
-- src/services
-- src/hooks
-- src/utils
-- src/context
-- src/constants
-- src/types
-- assets
-- supabase
-- README.md
-- ARCHITECTURE.md
-
-## Scripts
-
-```json
-{
-	"start": "expo start",
-	"android": "expo start --android",
-	"ios": "expo start --ios",
-	"lint": "eslint ."
-}
 ```
+src/
+  components/
+  screens/
+  navigation/
+  services/
+  hooks/
+  utils/
+  context/
+  constants/
+  types/
+assets/
+supabase/
+README.md
+ARCHITECTURE.md
+```
+
+---
+
+## 🔄 Architecture Principles
+
+* Service-based API abstraction
+* Multi-source fallback system
+* Lazy loading + caching
+* Error-safe UI
+* Demo + Live mode separation
+
+---
+
+## 📈 Business Impact
+
+MarketMood AI helps:
+
+* Reduce information overload
+* Improve investment decisions
+* Prevent emotional trading
+* Identify hidden opportunities
+
+---
+
+## 🔮 Future Scope
+
+* Portfolio-based personalization
+* Historical signal backtesting
+* Broker integrations (Zerodha, Upstox)
+* Voice-based AI assistant
+* Predictive analytics
+
+---
+
+## 🏁 Final Positioning
+
+> MarketMood AI doesn’t just analyze the market —
+> it identifies opportunities, explains their significance,
+> and guides investor decisions in real time.
+
+---
